@@ -1,14 +1,22 @@
 import * as actionTypes from "../actionTypes/actionTypes";
 
+function saveResult(counter) {
+  return {
+    type: actionTypes.STORE_RESULT,
+    resultCounter: counter
+  };
+}
+
 /**
  * Action to store counter value to Result Array
  * @param  counter
  * @return
  */
 export const store_result = counter => {
-  return {
-    type: actionTypes.STORE_RESULT,
-    resultCounter: counter
+  return dispatch => {
+    setTimeout(() => {
+      dispatch(saveResult(counter));
+    }, 2000);
   };
 };
 
