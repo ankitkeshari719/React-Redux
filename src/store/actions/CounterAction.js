@@ -1,7 +1,7 @@
 import * as actionTypes from "../actionTypes/actionTypes";
 
 /**
- * increment Action
+ * Action to increment counter
  * @return
  */
 export const increment = () => {
@@ -11,7 +11,7 @@ export const increment = () => {
 };
 
 /**
- * decrement Action
+ * Action to decrement counter 
  * @return
  */
 export const decrement = () => {
@@ -21,7 +21,7 @@ export const decrement = () => {
 };
 
 /**
- * Add counter value Action
+ * Action to add counter value 
  * @param  counter
  * @return
  */
@@ -33,7 +33,7 @@ export const add_value = counter => {
 };
 
 /**
- * Subtract counter value Action
+ * Action to subtract counter value 
  * @param  counter
  * @return
  */
